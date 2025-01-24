@@ -1,0 +1,10 @@
+{
+    "base_spec": "/pa/units/land/land_barrier/land_barrier.json",
+	"si_name": "land_barrier",
+    "tools":[{
+            "spec_id": "/pa/units/land/land_barrier2/land_barrier_tool_weapon2.json",
+            "aim_bone": "bone_root",
+            "muzzle_bone": "bone_root"
+        }
+    ]
+}

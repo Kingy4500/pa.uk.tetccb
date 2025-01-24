@@ -1,0 +1,32 @@
+{
+    "ammo_type": "Projectile",
+    "spawn_layers": "WL_Air",
+    "audio_loop": "/SE/Weapons/commander/Commander_uber_cannon_fire",
+    "fx_trail": {
+        "filename": "/pa/effects/specs/uber_proj_trail.pfx",
+        "offset": [0.0, 0.8, 0.0]
+    },
+    "physics": {
+        "radius": 1,
+        "gravity_scalar": 10,
+        "add_to_spatial_db": false,
+        "allow_underground": true
+    },
+    "events": {
+        "died": {
+            "audio_cue": "/SE/Impacts/cannon_uber",
+            "effect_spec": "/pa/effects/specs/uber_proj_explosion.pfx"
+        }
+    },
+    "flight_type": "Ballistic",
+    "turn_rate": 180,
+    "damage": 700,
+    "lifetime": 30,
+    "initial_velocity": 95.0,
+    "max_velocity": 95.0,
+    "recon": {
+        "observable": {
+            "ignore_radar": true
+        }
+    }
+}

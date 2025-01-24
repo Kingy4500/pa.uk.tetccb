@@ -1,0 +1,21 @@
+{
+    "base_spec": "/pa/tools/base_shell_turret/base_shell_turret.json",
+    "ammo_id": "/pa/ammo/ammo.json",
+    "rate_of_fire": 12,
+    "idle_aim_delay": 0.1,
+    "max_range": 80,
+    "yaw_rate": 3600,
+    "pitch_rate": 3600,
+    "yaw_range": 360,
+    "pitch_range": 90,
+    "spread_fire": true,
+    "auto_attack": true,
+    "manual_fire": true,
+    "auto_task_type": "anti_entity",
+    "anti_entity_targets_units": false,
+    "anti_entity_targets": ["/pa/units/land/laser_defense/laser_defense_ammo.json", "/pa/units/commanders/base_commander/base_commander_ammo_laser.json", "/pa/units/commanders/base_commander/base_commander_ammo_bullet.json", "/pa/units/commanders/base_commander/base_commander_ammo.json", "/pa/units/land/tactical_missile_launcher/tactical_missile_launcher_ammo.json", "/pa/units/land/artillery_unit_launcher/artillery_unit_launcher_ammo.json", "/pa/ammo/cannon_uber/cannon_uber.json"],
+    "target_layers": ["WL_Air", "WL_Orbital"],
+	"ammo_capacity": 16000,
+	"ammo_demand": 200,
+	"ammo_per_shot": 200
+}

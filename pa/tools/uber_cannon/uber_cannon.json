@@ -1,0 +1,20 @@
+{
+    "tool_type": "TOOL_Weapon",
+    "ammo_id": "/pa/ammo/cannon_uber/cannon_uber.json",
+    "target_layers": ["WL_LandHorizontal", "WL_WaterSurface", "WL_Air"],
+	"idle_aim_delay": 0.1,
+	"turn_rate": 180,
+    "ammo_source": "energy",
+    "ammo_capacity": 4100,
+    "ammo_demand": 900,
+    "ammo_per_shot": 4100, 
+    "max_range": 120,
+    "yaw_rate": 1080,
+    "pitch_rate": 1080,
+    "yaw_range": 1080,
+    "pitch_range": 120,
+    "rate_of_fire": 1.0,
+    "auto_attack": false,
+    "manual_fire": true,
+    "auto_task_type": "none"
+}
