@@ -21,7 +21,7 @@
     },
     "storage": {
         "energy": 5000,
-        "metal": 125
+        "metal": 120
     },
     "unit_types": ["UNITTYPE_Custom58", "UNITTYPE_Commander", "UNITTYPE_Construction", "UNITTYPE_Mobile", "UNITTYPE_Offense", "UNITTYPE_Land", "UNITTYPE_Amphibious", "UNITTYPE_NoBuild"],
     "command_caps": ["ORDER_Move", "ORDER_Patrol", "ORDER_Build", "ORDER_Attack", "ORDER_Repair", "ORDER_Assist", "ORDER_FireSecondaryWeapon"],

@@ -1,17 +1,25 @@
 {
     "base_spec": "/pa/ammo/base_artillery/base_artillery.json",
-    "damage": 3500,
-    "splash_damage": 1500,
-    "splash_radius": 100,
-    "full_damage_splash_radius": 45,
+    "damage": 2000,
+    "splash_damage": 1000,
+    "splash_radius": 40,
+    "full_damage_splash_radius": 25,
     "splash_damages_allies": false,
     "initial_velocity": 200.0,
     "lifetime": 30,
-    "influence_radius": 900,
+    "burn_damage": 150,
+    "burn_radius": 30,
     "physics": {
         "radius": 1,
         "gravity_scalar": 10,
         "add_to_spatial_db": false
+    },
+    "damage_volume": {
+        "initial_radius": 10.0,
+        "radius_velocity": 120.0,
+        "radius_accel": -40.0,
+        "delay": 1.333,
+        "burnable_remove_radius": 100.0
     },
     "model": {
         "filename": "/pa/units/air/shell_large/shell_large.papa"

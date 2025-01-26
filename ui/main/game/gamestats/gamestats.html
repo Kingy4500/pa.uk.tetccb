@@ -18,21 +18,21 @@
                     <loc>The Score Card</loc>
                 </div>
                 <!-- ko if: gameIsOnGoing -->
-                <div class="username summary"><loc>Ringside Seats</loc></div>
+                <div class="username summary"><loc>The Score Card</loc></div>
                 <!-- /ko -->
 
                 <!-- ko ifnot: gameIsOnGoing -->
                 <div class="username summary">
                     <!-- ko if: (model.victors().length == 1) -->
-                    <span><loc>The Champ:</loc></span>
+                    <span><loc>Victor:</loc></span>
                     <!-- /ko -->
 
                     <!-- ko if: (model.victors().length > 1) -->
-                    <span><loc>The Champions:</loc></span>
+                    <span><loc>Victors:</loc></span>
                     <!-- /ko -->
 
                     <!-- ko ifnot: (model.victors().length) -->
-                    <span><loc>What?</loc></span>
+                    <span><loc>?</loc></span>
                     <!-- /ko -->
                     <noloc>&nbsp;</noloc>
                     <!-- ko foreach: victors -->

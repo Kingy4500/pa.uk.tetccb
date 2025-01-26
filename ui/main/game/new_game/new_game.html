@@ -5,7 +5,7 @@
 <head>
     <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
     <meta locns="new_game" />
-    <noloc><title>Game Lobby</title></noloc>
+    <noloc><title>Event Lobby</title></noloc>
     <link href="bundle://boot/boot.css" rel="stylesheet" type="text/css" />
     <!-- <link href="coui://ui/main/shared/css/landing_page.css" rel="stylesheet" type="text/css" /> -->
     <link href="new_game.css" rel="stylesheet" type="text/css" />
@@ -23,7 +23,7 @@
     <div class="background_glow"></div>
     <!-- TITLE -->
     <div class="section_title">
-        <loc>Venue</loc>
+        <loc>Event</loc>
     </div>
     <!-- CONTENT -->
     <div class="section_content">
@@ -41,7 +41,7 @@
                                         <div class="section" data-bind="visible: canChangeSettings">
                                             <div class="form-group">
                                                 <div class="section_header" style="padding: 0; margin-top: -5px;">
-                                                    <loc>Title</loc>
+                                                    <loc>Event</loc>
                                                 </div>
                                                 <input type="text" style="width: 100%" maxlength="40" data-bind="textInput: gameName" />
                                             </div>
@@ -49,7 +49,7 @@
                                         <div class="section" data-bind="visible: $root.canNotChangeSettings && $root.gameName">
                                             <div class="form-group">
                                                 <div class="section_header title_static truncate">
-                                                    <loc>Title</loc><noloc>&nbsp;:&nbsp;</noloc><span data-bind="text: gameName"></span>
+                                                    <loc>Event/loc><noloc>&nbsp;:&nbsp;</noloc><span data-bind="text: gameName"></span>
                                                 </div>
                                             </div>
                                         </div>
@@ -112,7 +112,7 @@
                                                     <label data-placement="right" data-bind="css: { label_disabled: canNotChangeSettings, label_warning: canNotChangeSettings && suddenDeathMode }, click: toggleSuddenDeathMode,
                                                         tooltip: '!LOC: First team to kill a commander wins (protect your weakest player)'">
                                                         <input type="checkbox" style="pointer-events: none !important;" data-bind="enable: canChangeSettings, checked: suddenDeathMode" />
-                                                        <loc>We Go Down Together</loc>
+                                                        <loc>We Die Together</loc>
                                                     </label>
                                                 </div>
                                                 <!-- /ko -->
@@ -414,17 +414,17 @@
                                                             </span>
                                                             <div class="btn_toggle" data-bind="css: { live: isHiddenGame }, click: setHiddenGame, click_sound: 'default', rollover_sound: 'default'">
                                                                 <div class="btn_std_label btn_toggle_label">
-                                                                    <loc>I dont like random people</loc>
+                                                                    <loc>Private Event</loc>
                                                                 </div>
                                                             </div>
                                                             <div class="btn_toggle" data-bind="css: { live: isFriendsOnlyGame, btn_toggle_disabled: (!model.hasFriends()) }, click: function () { if (model.hasFriends()) model.setFriendsOnlyGame(); }, click_sound: 'default', rollover_sound: 'default'">
                                                                 <div class="btn_std_label btn_toggle_label">
-                                                                    <loc>Corner men</loc>
+                                                                    <loc>Friends Only</loc>
                                                                 </div>
                                                             </div>
                                                             <div class="btn_toggle" data-bind="css: { live: isPublicGame }, click: setPublicGame, click_sound: 'default', rollover_sound: 'default'">
                                                                 <div class="btn_std_label btn_toggle_label">
-                                                                    <loc>I like random people</loc>
+                                                                    <loc>Public Event</loc>
                                                                 </div>
                                                             </div>
                                                             <input type="password" placeholder="Password (optional)" id="input_pwd" data-bind="textInput: privateGamePassword, attr: { type: passwordInputType }" />
@@ -488,7 +488,7 @@
                                                                                                         <!-- /ko -->
 
                                                                                                         <div class="army-button btn_add_ai" data-bind="click: function () { model.targetAIArmyIndex(army.index()); model.targetAISlotIndex($index()); model.addAI(); }, click_sound: 'default', rollover_sound: 'default'">
-                                                                                                            <loc>Add dumb bot</loc>
+                                                                                                            <loc>Add AI</loc>
                                                                                                         </div>
                                                                                                     </div>
 
@@ -715,7 +715,7 @@
 
                                                                                     <!-- ko if: army.showToggleSharedArmy -->
                                                                                     <div class="btn_toggle_shared_army" data-bind="click: army.toggleSharedArmy, css: { on: army.sharedArmy }, click_sound: 'default', rollover_sound: 'default'">
-                                                                                        <loc>SHARE SUPPLIES</loc>
+                                                                                        <loc>SHARE ARMY</loc>
                                                                                     </div>
                                                                                     <!-- /ko -->
                                                                                 </div>
@@ -843,7 +843,7 @@
 
                 <div class="btn_std" data-bind="click: leave, click_sound: 'default', rollover_sound: 'default'" style="margin: 0px -5px;">
                     <div class="btn_label" style="width: 150px;">
-                        <loc>Get me out of here</loc>
+                        <loc>Im A Quitter</loc>
                     </div>
                 </div>
             </div>

@@ -13,7 +13,7 @@
     "alt_area_build_pattern": [[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]],
     "wreckage_health_frac": 0.0,
 	"storage": {
-        "metal": 400
+        "metal": 200
     },
     "unit_types": ["UNITTYPE_Custom1", "UNITTYPE_Structure", "UNITTYPE_Basic", "UNITTYPE_CmdBuild", "UNITTYPE_Economy"],
     "recon": {
